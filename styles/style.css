@@ -46,7 +46,7 @@ h4, h2 {
   margin: 0; }*/
 
 .wrapper {
-  width: 60%;
+  width: 45%;
   height: 100vh;
   /*margin: 0 auto;*/
   text-align: center;
@@ -56,7 +56,10 @@ h4, h2 {
 
 }
 
-ul.wordSheet{}
+body{
+  margin-top: 400px;
+  margin-left: 200px;
+}
 
 
 
@@ -91,7 +94,7 @@ ul.wordSheet {
   -ms-flex-align: center;
   align-items: center;
   /*margin: 10px auto;*/
-  width: 75%;
+  /*width: 75%;*/
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; 
@@ -100,7 +103,7 @@ ul.wordSheet {
 
 
 #canvas{
-  width: 45%;
+  width: 40%;
   /*height: 100vh;*/
   position: absolute;
   z-index: -1;
@@ -129,11 +132,11 @@ button{
     color: white;
 
    /*display: none;*/
-  border: 2px solid black;
+  border: 2px solid white;
   background-color: black;
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  /*border-radius: 0%;*/
+  width: 80px;
+  height: 80px;
   margin: 10px;
   position: relative;
   /*position: fixed;*/
@@ -141,17 +144,21 @@ button{
 }
 
 ul.wordSheet li {
+
+  /*BBBBORDER*/
   /*border: 2px solid white;*/
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
+
+  
+  /*border-radius: 100%;*/
+  width: 70px;
+  height: 70px;
   margin: 10px;
   position: relative;
   /*position: fixed;*/
   text-align: center; }
 
 ul.wordSheet li label {
-  font-size: 25px; }
+  font-size: 18px; }
 
 i {
   position: absolute;
@@ -170,7 +177,7 @@ i {
 ul.grid {
   display: none; }
 
-@media (max-width: 1100px) {
+/*@media (max-width: 1100px) {
   .wrapper {
     width: 90%; } }
 
@@ -178,7 +185,7 @@ ul.grid {
   wrapper {
     width: 100%; }
   ul.wordSheet li {
-    border: 2px solid black;
+    border: 2px solid white;
     width: 150px;
     height: 100px; }
   ul.wordSheet li label {
@@ -227,3 +234,4 @@ ul.grid {
   li {
     border-radius: 2%;
     width: 75%; } }
+*/

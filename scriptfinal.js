@@ -1,22 +1,41 @@
- //must   
+
+
+//must   
     
-var n = 19;
+var n = 46;
 var previousN;
 
 var pointPosXRate = [
-0.11, 0.30, 0.50, 0.69, 0.88,
-0.11, 0.30, 0.50, 0.69, 0.88,
-0.11, 0.30, 0.50, 0.69, 0.88,
-0.11, 0.30, 0.50, 0.69, 0.88,
-0.11, 0.30, 0.50, 0.69, 0.88
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912,
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912,
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912,
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912,
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912,
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912,
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912,
+0.072, 0.192, 0.312, 0.432, 0.552, 0.672, 0.792, 0.912
 ];
 var pointPosYRate = [
-0.11, 0.11, 0.11, 0.11, 0.11,
-0.30, 0.30, 0.30, 0.30, 0.30,
-0.50, 0.50, 0.50, 0.50, 0.50,
-0.69, 0.69, 0.69, 0.69, 0.69, 
-0.88, 0.88, 0.88, 0.88, 0.88
+0.072, 0.072, 0.072, 0.072, 0.072, 0.072, 0.072, 0.072,
+0.192, 0.192, 0.192, 0.192, 0.192, 0.192, 0.192, 0.192,
+0.312, 0.312, 0.312, 0.312, 0.312, 0.312, 0.312, 0.312,
+0.432, 0.432, 0.432, 0.432, 0.432, 0.432, 0.432, 0.432,
+0.552, 0.552, 0.552, 0.552, 0.552, 0.552, 0.552, 0.552,
+0.672, 0.672, 0.672, 0.672, 0.672, 0.672, 0.672, 0.672,
+0.792, 0.792, 0.792, 0.792, 0.792, 0.792, 0.792, 0.792,
+0.912, 0.912, 0.912, 0.912, 0.912, 0.912, 0.912, 0.912
 ];
+
+var empty = [
+1,2,3,4,5,6,7,8,
+9,12,13,14,15,16,
+17,22,23,24,
+25,26,32,
+33,34,
+41,42,43,
+49,50,51,56,
+57,58,59,60,63,64
+]
 
 
 var canvas = document.getElementById("canvas");
@@ -48,14 +67,14 @@ ctx.closePath();
 
 const DOT_COUNT = 1,
       CONNECT_COUNT_PER_DOT = 4,
-      RADIUS = 1.5,
-      LINE_WIDTH = 0.6;
+      RADIUS = 1,
+      LINE_WIDTH = 0.3;
 
 function Dot(){
   // this.x = canvas.width * Math.random();
   // this.y = canvas.height * Math.random();
-  this.x = pointPosXRate[18] * (canvas.width);
-  this.y = pointPosYRate[18] * (canvas.width);
+  this.x = pointPosXRate[45] * (canvas.width);
+  this.y = pointPosYRate[45] * (canvas.width);
   this.xenergy = Math.random() * (0.2)+0.2 ;
   this.yenergy = Math.random() * (0.2)+0.2;
   var that = this;
@@ -140,24 +159,24 @@ var d = new Dot();
 
     
 
-function drawSimple(p1,p2){
+// function drawSimple(p1,p2){
 
-var startPosX = pointPosXRate[p1] * (canvas.width);
-var startPosY = pointPosYRate[p1] * (canvas.width);
+// var startPosX = pointPosXRate[p1] * (canvas.width);
+// var startPosY = pointPosYRate[p1] * (canvas.width);
 
-var endPosX = pointPosXRate[p2] * (canvas.width);
-var endPosY = pointPosYRate[p2] * (canvas.width);
+// var endPosX = pointPosXRate[p2] * (canvas.width);
+// var endPosY = pointPosYRate[p2] * (canvas.width);
 
-var c = document.getElementById("canvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.moveTo(startPosX, startPosY);
-ctx.lineTo(endPosX, endPosY);
-      ctx.lineWidth = 3;
-      ctx.strokeStyle = '#ffffff';
-ctx.stroke();
+// var c = document.getElementById("canvas");
+// var ctx = c.getContext("2d");
+// ctx.beginPath();
+// ctx.moveTo(startPosX, startPosY);
+// ctx.lineTo(endPosX, endPosY);
+//       ctx.lineWidth = 3;
+//       ctx.strokeStyle = '#ffffff';
+// ctx.stroke();
 
-}
+// }
 
 
 
@@ -178,28 +197,47 @@ var connection = new WebSocket('ws://127.0.0.1:1337');
         // JSON this should work without any problem but we should make sure that
         // the massage is not chunked or otherwise damaged.
         try {
-             var json = JSON.parse(message.data);
-             console.log(json);
+
+          var poem = message.data.split(',');
+          var num = Math.floor(Math.random() * Math.floor(poem.length));
+
+          var chosenPoem = poem[num];
+
+          console.log(chosenPoem);
+
+             //var json = JSON.parse(message);
+             //console.log(json);
+            // console.log("message.data:"+ message);
+             //console.log(json.text);
+             
+             // var wholePoem = json.text;
+             // var whole = json;
+             // var firstSentence = ;
+             
+             // console.log("a b c d".spilt(" "));
 
              connection.send(bonusBank[bonusBank.length-1]);
             // $('#poems').append("<p class='sentences'>"+newNouns[touchCount-2]+sentences[Math.floor(Math.random()*100)]+newNouns[touchCount-1]+"</p>");
             // $ ('.poemWrapper').text(json.examples[0]);
-            var num = Math.floor(Math.random() * Math.floor(json.examples.length));
+            var num = Math.floor(Math.random() * Math.floor(message.data.length));
             
             if(bonusBank.length>2){
-            $ ('.poemWrapper').append("<p class='sentences'>" + json.examples[num]+"</p>");
+            $ ('.poemWrapper').append("<p class='sentences'>" + chosenPoem+"</p>");
+            //$ ('.poemWrapper').append("<p class='sentences'>" + json.text.split('\n')[1]+"</p>");
 
-            responsiveVoice.speak(json.examples[num]);
+            responsiveVoice.speak(chosenPoem,"UK English Male",{pitch: -2});
+
+            
 
 
 
 
         }else{
-            $ ('.poemWrapper').append("<p class='sentences'>" + "I love you"+"</p>");
+            $ ('.poemWrapper').append("<p class='sentences'>" + "Dear"+"</p>");
         }
 
         } catch (e) {
-            console.log('This doesn\'t look like a valid JSON: ', message.data);
+            //console.log('This doesn\'t look like a valid JSON: ', message.data);
             return;
         }
 
@@ -223,13 +261,13 @@ var connection = new WebSocket('ws://localhost:8025/john');
 
 
  // n-5     ------------------------------
-             if(dataNum+1 == n-5){
+             if(dataNum+1 == n-8){
 
    console.log("23333");
 
             reset();
             previousN = n;
-            n=n-5;
+            n=n-8;
             bonusBank.push(wordBank[wordBank.length-4]);
 
           
@@ -339,10 +377,10 @@ sendMessage();
 }
 
 // n+5     ------------------------------
-if(dataNum+1 == n+5){
+if(dataNum+1 == n+8){
   reset();
             previousN = n;
-            n=n+5;
+            n=n+8;
             bonusBank.push(wordBank[wordBank.length-1]);
 
           console.log(previousN,n);   
@@ -367,10 +405,10 @@ addDots(pointPosXRate[n-1] * (canvas.width),pointPosYRate[n-1] * (canvas.width))
 }
 
 // n-8     ------------------------------
-if(dataNum+1 == n-8){
+if(dataNum+1 == n-11){
 reset();
-            n=n-8;
-            bonusBank.push("cold");
+            n=n-11;
+            bonusBank.push(antiwordBank[antiwordBank.length-1]);
 
           
           
@@ -434,7 +472,7 @@ let wordSheet = [] // List of randomly generated words displayed on bingo sheet
 let antiwordSheet = []
 const bonusBank =  // List of Bonus words
     [ 
-    'love'
+    'dear'
     ]
 
 
@@ -458,8 +496,9 @@ var deleteWords = function(){
 } 
 
 var reset = function(){
-	for(var i=0;i<25;i++){
+	for(var i=1;i<65;i++){
 		$('.word'+i).text('');
+    //$('.word'+i).css({opacity:0.2});
 	}
 }
 
@@ -467,20 +506,38 @@ var reset = function(){
 var setSheet = function () { //appending words from the array
 
 
+  // $('.word'+(n-8)).css({opacity:1});
+  // $('.word'+(n-1)).css({opacity:1});
+  // $('.word'+(n+1)).css({opacity:1});
+  // $('.word'+(n+8)).css({opacity:1});
+  // $('.word'+n).css({opacity:1});
+  
 
-	$('.word'+(n-5)).text(wordBank[wordBank.length-4]);
+	$('.word'+(n-8)).text(wordBank[wordBank.length-4]);
 	$('.word'+(n-1)).text(wordBank[wordBank.length-3]);
 	$('.word'+(n+1)).text(wordBank[wordBank.length-2]);
-	$('.word'+(n+5)).text(wordBank[wordBank.length-1]);
+	$('.word'+(n+8)).text(wordBank[wordBank.length-1]);
 
 	$('.word'+n).text(bonusBank[bonusBank.length-1]);
+
+  for(var i=1;i<empty.length;i++){
+    $('.word'+ empty[i]).text('');
+    //$('.word'+i).css({opacity:0.2});
+  }
 
    
 }
 
 let antisetSheet = function(){
 
-	$('.word'+(n-8)).text(antiwordBank[antiwordBank.length-1]);
+  // $('.word'+(n-11)).css({opacity:1});
+
+	$('.word'+(n-11)).text(antiwordBank[antiwordBank.length-1]);
+
+  for(var i=1;i<empty.length;i++){
+    $('.word'+ empty[i]).text('');
+    //$('.word'+i).css({opacity:0.2});
+  }
 }
 
 // const newSheet = function () {
@@ -506,7 +563,9 @@ let antisetSheet = function(){
                 // key: apiKey,
                 // rel_trg: "yoga",
                 // rel_syn: "love",
-                rel_syn: bonusBank[bonusBank.length-1],
+                //rel_trg: bonusBank[bonusBank.length-1],
+                //rel_syn: bonusBank[bonusBank.length-1],
+                ml: bonusBank[bonusBank.length-1],
                 max: 4
             },
             proxyHeaders: {
@@ -630,7 +689,7 @@ var antibankWords = function(wordArray){ //PART 4:: create a bank of words from 
     // Events:: Bingo Word Interactions
     // Adding words to the final word list (and removing words from world list when words are deselected)$('#word1').on('click', function () {
     // $('#sub').unbind('click').click(function () {
-      $('#word'+(n-5)).unbind('click').click(function () {  
+      $('#word'+(n-8)).unbind('click').click(function () {  
       	// console.log(233);
         // if ($('#word'+(n-5)).prop("checked") == true) {
             // var newInput = $(`<p id="display1">${wordSheet[0]}<p>`)
@@ -638,7 +697,7 @@ var antibankWords = function(wordArray){ //PART 4:: create a bank of words from 
 
             reset();
             previousN = n;
-            n=n-5;
+            n=n-8;
             bonusBank.push(wordBank[wordBank.length-4]);
 
           
@@ -745,7 +804,7 @@ sendMessage();
        
     })
 
-         $('#word'+(n+5)).unbind('click').click(function () {  
+         $('#word'+(n+8)).unbind('click').click(function () {  
       	// console.log(233);
         // if ($('#word'+(n+5)).prop("checked") == true) {
             // var newInput = $(`<p id="display1">${wordSheet[0]}<p>`)
@@ -753,7 +812,7 @@ sendMessage();
 
             reset();
             previousN = n;
-            n=n+5;
+            n=n+8;
             bonusBank.push(wordBank[wordBank.length-1]);
 
           console.log(previousN,n);   
@@ -779,14 +838,14 @@ addDots(pointPosXRate[n-1] * (canvas.width),pointPosYRate[n-1] * (canvas.width))
     })
 
 
-$('#word'+(n-8)).on('click', function () {  
+$('#word'+(n-11)).on('click', function () {  
       	// console.log(233);
-        if ($('#word'+(n-8)).prop("checked") == true) {
+        if ($('#word'+(n-11)).prop("checked") == true) {
             // var newInput = $(`<p id="display1">${wordSheet[0]}<p>`)
             // $('#wordList').append(newInput);
 
          reset();
-            n=n-8;
+            n=n-11;
             bonusBank.push(antiwordBank[antiwordBank.length-1]);
 
           
@@ -820,20 +879,20 @@ sendMessage();
 
 
 
-    $('#word1').on('click', function () {
-        if ($('#word1').prop("checked") == true) {
-            var newInput = $(`<p id="display1">${wordSheet[0]}<p>`)
-            $('#wordList').append(newInput);
-        } else if ($('#word1').prop("checked") == false) {
-            $('#wordList').find('#display1').remove();
-        }
-        // responsive grid
-        if ($('#word1').prop("checked") == true) {
-            $('li.1').addClass('crossed')
-        }else if ($('#word1').prop("checked") == false) {
-            $('li.1').removeClass('crossed')
-        }
-    })
+    // $('#word1').on('click', function () {
+    //     if ($('#word1').prop("checked") == true) {
+    //         var newInput = $(`<p id="display1">${wordSheet[0]}<p>`)
+    //         $('#wordList').append(newInput);
+    //     } else if ($('#word1').prop("checked") == false) {
+    //         $('#wordList').find('#display1').remove();
+    //     }
+    //     // responsive grid
+    //     if ($('#word1').prop("checked") == true) {
+    //         $('li.1').addClass('crossed')
+    //     }else if ($('#word1').prop("checked") == false) {
+    //         $('li.1').removeClass('crossed')
+    //     }
+    // })
 
     
     
@@ -1003,9 +1062,6 @@ events();
 //     p2 = n-1;
 //     draw();
 // }
-
-
-
 
 
 

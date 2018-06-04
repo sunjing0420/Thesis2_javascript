@@ -1,0 +1,22 @@
+[
+	
+	{ "word" : "love" ,
+	  "poem": [ "I love you as certain dark things are to be loved",
+		        "I love you without knowing how, or when, or from where",
+		        "Never fall in love with a poet",
+		        "I should have loved a thunderbird instead",
+		        "my love",
+		        "They say to have a writer fall in love with you" ]
+    },
+
+	 {"word" : "passion",
+	  "poem" :[
+            "Her passion burns bright",
+            "I ignite your flames with a passion untamed",
+            "Passion is blue",
+            "Passion sounds like medicine rattling in a pill bottle",
+            "Moment of passion, like a smile"
+
+             ]
+	}
+]

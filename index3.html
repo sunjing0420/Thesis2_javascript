@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="styles/style1.css">
+	<title>2</title>
+
+</head>
+<body>
+
+<p id="block"></p>
+
+<script type="text/javascript">
+	var lastJ = ' ';
+	var count = 0;
+	var sendMessage = function(){
+	var connection = new WebSocket('ws://127.0.0.1:1337');
+
+	        connection.onmessage = function (message) {
+	        // try to parse JSON message. Because we know that the server always returns
+	        // JSON this should work without any problem but we should make sure that
+	        // the massage is not chunked or otherwise damaged.
+	        try {
+
+	        	 var poem = message.data.split(',');
+	        	 //console.log(poem);
+	        	 //console.log(poem[0]);
+            //      var num = Math.floor(Math.random() * Math.floor(poem.length));
+
+            //      var chosenPoem = poem[num];
+
+            //      console.log(chosenPoem);
+
+            
+            // //var num = Math.floor(Math.random() * Math.floor(message.data.length));
+            
+            // if(bonusBank.length>2){
+            // $ ('.poemWrapper').append("<p class='sentences'>" + chosenPoem+"</p>");
+
+            // responsiveVoice.speak(chosenPoem,"UK English Male",{pitch: -2});
+
+
+	             // var json = JSON.parse(message.data);
+	             // console.log(message.data);
+	             // console.log(lastJ);
+
+	             // connection.send(bonusBank[bonusBank.length-1]);
+	            // $('#poems').append("<p class='sentences'>"+newNouns[touchCount-2]+sentences[Math.floor(Math.random()*100)]+newNouns[touchCount-1]+"</p>");
+	            // $ ('.poemWrapper').text(json.examples[0]);
+
+	            // if(bonusBank.length>2){
+	            // $ ('.poemWrapper').append("<p class='sentences'>" + json.examples[num]+"</p>");
+
+	            //responsiveVoice.speak(json.examples[num]);
+	            if(count==0){
+	            	document.getElementById('block').innerHTML+='Dear<br>';
+	            }else if(poem[0]!=lastJ){
+					// console.log('refreshed');
+					//console.log(poem[num]);
+	            	var num = Math.floor(Math.random() * Math.floor(poem.length));
+	            	// console.log();
+	            	var chosenPoem = poem[num];
+	            	console.log(chosenPoem);
+	            	//responsiveVoice.speak(chosenPoem,"UK English Male",{pitch: -2});
+	            	//document.getElementById('block').innerHTML+=json.examples[num]+'<br>';
+	            	//document.getElementById('block').append("<p class='sentences'>" + json.examples[num]+"</p>");
+	            	//document.getElementById('block').innerHTML+='Dear<br>';
+	            	$ ('#block').append("<p class='sentences'>" + chosenPoem+"</p>");
+	            	responsiveVoice.speak(chosenPoem,"UK English Male",{pitch: -2});
+	            }
+	            	count++;
+
+	            lastJ = poem[0];
+
+
+	        
+
+	        } catch (e) {
+	        	// console.log(e);
+	         //    console.log('This doesn\'t look like a valid JSON: ', message.data);
+	            return;
+	        }
+
+	    };
+	}
+
+	var refresh = setInterval(function(){
+		sendMessage();
+	},1000);
+</script>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script> 
+</body>
+</html>

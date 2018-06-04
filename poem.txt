@@ -1,0 +1,636 @@
+poem = {
+	
+	"love": [
+		     "I love you as certain dark things are to be loved",
+		     "I love you without knowing how, or when, or from where",
+		     "Never fall in love with a poet",
+		     "I should have loved a thunderbird instead",
+		     "my love",
+		     "They say to have a writer fall in love with you"
+
+
+		    ],
+
+	"passion":[
+            "Her passion burns bright",
+            "I ignite your flames with a passion untamed",
+            "Passion is blue",
+            "Passion sounds like medicine rattling in a pill bottle",
+            "Moment of passion, like a smile",
+
+
+
+
+	        ],
+	"warmth":[
+		    "fire, blankets, your arms they all bring warmth",
+		    "In the warmth of this peace",
+		    "It is the warmth you offer",
+		    "And the warmth that floods through me",
+		    "Warmth may come from a significant other",
+
+
+	        ],
+	"mania":[
+            "Mania means blackouts",
+            "Is now dwindling, fading into the depth of mania",
+            "The summer air, I fear, brings a sort of mania",
+            "My mania tells me things and I obey",
+
+	],
+	"rage":[
+		    "Rage fills you with endless fire",
+		    "Rage chokes you with foul decay",
+		    "Rage, Rage, Rage unable to think",
+		    "The rage is forgotten",
+
+
+	],
+	"craze":[
+		    "You’re the latest craze",
+		    "It seems like the new craze",
+		    "Craze by the crowds",
+		    "Can I shake this craze",
+		    "But still I struggle with the current’s craze",
+
+
+	],
+	"heat":[
+            "Sitting in the heat",
+            "I can't stand this heat!",
+            "I missed most of this summer's heat",
+            "the summer heat in her eyes",
+            "The heat is right outside, waiting for you",
+
+	],
+	"warmness":[
+            "Feel the warmness, feel my smile, feel the trickle of my tears",
+            "Your laughter fills me with warmness",
+            "The honeyed warmness of his smile",
+            "A warmness, thats spread on the bed",
+            "With a touch of warmness",
+            "Blue whispery skies feed warmness to the skin",
+
+ 
+	],
+	"warmheartedness":[
+		    "I believe especially in being warmhearted in love",
+		    "I believe in being warmhearted",
+		    "You welcome me in a warmhearted embrace",
+
+	],
+	"enjoy":[
+            "Only enjoyment remains",
+            "Enjoy the Universe",
+            "Enjoy each passing moment that flits by like a wounded butterfly",
+            "Enjoy the Universe and do nothing else",
+            "I want you to enjoy the moment, when I am with you",
+            "Enjoy every smile YOU bring",
+
+	],
+	"revel":[
+            "I revel in sunshine, light",
+            "I succumb and revel in every piece of you",
+            "There is nothing and I revel in it",
+            "Being able to revel in the new",
+
+	],
+	"savor":[
+            "Savor the last memory",
+            "Maybe we would've savored the taste",
+            "I will savor up your love",
+            "There is someone else who will savor every moment",
+
+
+	],
+	"savour":[
+            "Savour it",
+            "We savour that sweetness now",
+            "Who didn't know how to savour the truth",
+	],
+	"bask":[
+            "My only wish is to bask in the light of the world",
+            "I bask in you",
+            "I want to bask in her ambience atmosphere",
+            "To bask in the next summer sun",
+
+	],
+	"endure":[
+            "I know I shall endure",
+            "Yet the candle still endures",
+            "So much pain to endure",
+            "Fill the hearts of all the just who endure"
+
+	],
+	"relish":[
+            "Still I maintain with a real stance that love remains love I relish",
+            "Silently relish whimsical patterns",
+            "I relish what I can",
+
+
+	],
+	"zest":[
+            "It was once full of life and zest",
+            "You're the lemon zest scent",
+            "You imbibe new zest of inspiration",
+            "to zest our souls and vanish our fears",
+	],
+	"gusto":[
+            "Go For the Gusto",
+	],
+	"zestfulness":[
+            "Full of liveliness and zestfulness",
+            "Leaving everything zestful, especially roses"
+	],
+	"enthusiasm":[
+            "Enthusiasm lights the way",
+            "I wish I still had that enthusiasm",
+
+
+	],
+	"tanginess":[
+            "Stuffed with the tanginess of gravy",
+            "If I pause to appreciate the delicate tanginess",
+            "The incredible combination of sweetness and tangines",
+
+	],
+	"spice":[
+		    "Riddled with spices",
+		    "Now I have sugar and spice",
+		    "For you cook with the spice of love",
+		    "Like sugar and spice in separate jars",
+	],
+	"spiciness":[
+		    "He kisses the spiciness of it's cheek",
+		    "I eat, hot tomales like bread and butter, the spiciness should make me better",
+		    "A hint of spiciness to aliven the equation and a little bitterness to sharpen the sensation",
+
+	],
+ 	"spice up":[
+            "I'll spice up my envy to be bitter hot",
+            "You spice things up",
+
+	],
+	"spicery":[
+            "That widewhere sent their spicery,to distant parts"
+	],
+	"piquancy":[
+		    "There was piquancy in saccharin tea",
+		    "Possesses a dash of piquancy",
+		    "Filled with color and piquancy",
+		    "Failed to taste great piquancy",
+
+	],
+	"manic disorder":[
+            "The grip of manic depression has on me",
+            "Manic depression is apart of me",
+	],
+	"frenzy":[
+            "Heart stops and my brains on a feeding frenzy from starvation",
+            "I just got into a frenzy and killed all of them in my heart",
+            "So I would drown these sorrow in my own frenzy",
+            "As i frenzy for your mouth",
+            "The frenzy isn't slowing down even a little",
+
+	],
+	"cacoethes":[
+            "A cacoethes would emerge",
+            "And in the blanket blackout cacoethes",
+            "Cacoethes burns abrogating sanity's grasp",
+            "Cacoethes tears reside within these morrows",
+            "My cacoëthes lost in your elegance",
+
+	],
+	"hysteria":[
+		    "This hysteria, raw desire",
+		    "That Hysteria is bubbling on the edges of Her cauldron",
+		    "I filled my cup, made a hysteria soup. Did you take your pills?",
+		    "We were possessed by the hysteria of universe",
+		    "This is absurd, this is Hysteria",
+		    "Love is a hysteria",
+		    "There is an air of hysteria",
+
+
+	],
+	"delirium":[
+		    " I have found delirium to be a pleasure",
+		    "But the delirium is hauntingly beautiful",
+		    "Leaving you in a realm of constant Delirium",
+		    "Delirium in my bloodstream",
+		    "In delirium, he tears his journal apart",
+
+	],
+	"fury":[
+		    "I'm sorry, I am the fury",
+		    "All this bitter fury locked within here",
+		    "Gives you wings of fury",
+		    "You'll never beat the fury out of my words",
+		    "Punishing relentlessly with nature’s fury",
+		    "Brilliant, your fury touches briefly upon my sunburned shoulders"
+	],
+	"ferocity":[
+		    "When i was younger i saw a painting entitled “the ferocity of love”",
+		    "And kills this game with extreme ferocity",
+		    "I feel the sun's solar ferocity",
+		    "With the ferocity of a desperate swordfish",
+		    "Ferocity to match my own",
+		    "With ferocity, he goes out to conquer",
+		    "Recovering from the ferocity of chase",
+
+	],
+	"fad":[
+		  "You are fad and fantasy",
+		  "You are more fad than friend to me",
+		  "I do not wear the latest fads",
+		  "I'm knee-deep in dreams I let fade away",
+		  "A fad that now seems ever growing",
+	],
+	"madness":[
+		  "Don't let madness corrupt you",
+		  "Then talking to you at all is pure madness",
+		  "And this madness is just shy of being in a pine box",
+		  "I have an intimate relationship with madness",
+		  "There's madness in the sky",
+		  "Madness is genius and it's better to be insane"
+	],
+	"furore":[
+		  "Immense furore along the dock",
+		  "All this noise and full furore",
+		  "When the furore all died down",
+		  "Some thunder and furore is what I need",
+		  "From love to furore",
+	],
+	"cult":[
+		  "This love cult is for all the lonely ghosts",
+		  "Won't you come and join our cult",
+		  "Free yourself from the cult of chumps",
+		  "Give it back to the cult",
+		  "Their sign of a death cult",
+	],
+	"lunacy":[
+		  "Darkness awakens with lunacy",
+		  "To sleep and dream in the slip-stream, drowning in our own lunacy",
+		  "Lost in this bouquet of lunacy",
+		  "I love you like a lunatic just do not take to trial lunacy",
+		  "Lunacy is not so cut and dried"
+	],
+	"hydrophobia":[
+		  "I am a whirlwind of rain on a hydrophobic world",
+		  "Which way a mad dog detests water for its hydrophobia",
+		  "When determinism equates to hydrophobia",
+
+	],
+	"ignite":[
+		  "Ignites my greatest passion to live",
+		  "They each breathe fire, like flames they ignite",
+		  "Your eyes ignite the looming and beautiful night sky",
+		  "My Fire is going to ignite",
+		  "So I may find peace in the ever burning fires that ignite my soul",
+		  "Two hearts ignited on fire",
+		  "Ignite my skin into flames",
+		  "Waiting for us to find the determination to ignite our torches",
+
+	],
+	"light":[
+		"In your light, I learn how to love",
+		"Your personality alone lights up the darkest twilight",
+		"Light that guides the way and makes all things well",
+		"Luminous, bright, a light pure as snow",
+		"Shines a bright brilliant light",
+		"For the light is everywhere",
+		"I see my light going on and going off",
+		"limited the light may have been until I decided to be limitless",
+		"I read poetry by candle light"
+	],
+	"inflame":[
+		"We inflame this earth with passion and desires",
+		"Sounds of flamenco inflame the air",
+		"Waiting to inflame me, to rekindle those sparks",
+		"Shock dry kindling to inflame",
+		"To spark, inflame, my chilly muse",
+		"Inflame all that behold us for a love unchained"
+	],
+	"erupt":[
+		"We are just like volcanoes, ready to erupt anytime",
+		"We erupted when it was least expected",
+		"And I helplessly wait for the day my inner volcano would erupt",
+		"I feel like a volcano, that will erupt",
+		"The season of heat is slow to erupt",
+		"We see it when fires rage on and volcanoes erupt",
+	],
+	"obliterate":[
+		"Like the world within her eyes obliterated",
+		"Will finally obliterate us",
+		"One day the largest star will obliterate the only home humans ever had",
+		"May the rain obliterate my pain?",
+		"To obliterate the slightest chance of feeling",
+		"Hold me tight while you obliterate my sadness",
+		"They obliterate my sorrow with their luminescence",
+	],
+	"hotness":[
+		"You smell the intensely arid hotness of summer",
+		"I am surrounded by unbearable hotness",
+		"Hotness arriving",
+		"Steamy and hotness",
+		"Feel a hotness in your fingertips when you pass me another layer",
+		"It brings out the hotness in you",
+	],
+	"pepperiness":[
+		"Fresh nasturtium leaves for a peppery taste",
+		"Savoring only percentages, with sprinkling of peppery talks",
+		"The salt wind blowing through his peppery hair",
+		"Your coral lips silently speak of hot peppery kisses",
+		"The sensual cracking and peppery softness making me melt",
+	],
+	"horniness":[
+		"Then the rush of horniness, loneliness",
+		"Divided by horniness",
+		"I'm lucky horniness isn't a crime",
+		"With all it’s warmth and horniness",
+		"Full of secret horniness",
+	],
+	"hot pants":[
+		"Skin on fire, liar liar, pants on fire",
+		"That grasshopper with his pants on fire",
+
+	],
+	"estrus":[
+		"My soul is coming into estrus",
+		"Stained in this estrus of dreams",
+		"Cradle my thighs in an estrus of dreams",
+		"Mathematics in estrus clothed by fractions",
+		"To gender mine for blood estrus sand",
+		"The moon is new, the deer are charged in estrus"
+	],
+	"rut":[
+		"I've been in a rut",
+		"I swear it seems like I can never escape this rut I fall into",
+		"I'd be stuck once again in a rut",
+		"An awful rut that I don’t know how to get out of",
+		"Clouds like dusty dirt ruts curving into saguaro spiked hills to the west",
+	],
+	"oestrus":[
+		"My soul is coming into estrus",
+		"Stained in this estrus of dreams",
+		"Cradle my thighs in an estrus of dreams",
+		"Mathematics in estrus clothed by fractions",
+		"To gender mine for blood estrus sand",
+		"The moon is new, the deer are charged in estrus",
+	],
+	"rutting":[
+		"Rutting and knitting",
+		"It's all fingering and rutting",
+		"Rutting day and night",
+		"I fell asleep to the rutting noises",
+		"Rutting out the jagged envelopes that refuse to be opened",
+		"Hard and true as the red deer rutting",
+	],
+	"affection":[
+		"I can feel affection",
+		"That I no longer wish for such affection",
+		"I call her the queen of affection",
+		"I crave human affection as much as a flower demands photosynthesis hiding beneath a shaded tree",
+		"What is love without affection?",
+		"Invest some time in affection",
+		"Soaking up your warmth and affection",
+		"I hope the fond affection with which I type them wraps you up",
+	],
+	"heart":[
+		"Sometimes with the Heart",
+		"My heart is a happy drunk",
+		"A poet's heart isn't like any other",
+		"I only want to know if your heart is true",
+		"And my heart will finally let you in",
+		"No heart left to steal",
+		"A heart that is pure, will be forever more",
+		"A heart so bright, deeply reflects the color white",
+		"There are no limits of the heart",
+		"A composition of the beating heart",
+		"Heart to heart",
+		"Love is heart’s conviction",
+		"Seeing my heart melting for you on the roaring fire",
+	],
+	"fondness":[
+		"There was a distinct fondness I acquired",
+		"I never thought it's possible, to have such deep fondness for somebody",
+		"who's shapes I remember with fondness, angst",
+		"Fondness makes the heart grow distant",
+		"Fondness becomes love",
+		"Yet a fondness ignited, like a burning ember",
+		"No matter the fondness that distance does bring the heart",
+		"You're fondness heart",
+		"My fondness then shall grow",
+	],
+	"partiality":[
+		"Or warm sun partiality with those cover clouds",
+		"When partiality grows and you accept she's best",
+
+	],
+	"tenderness":[
+		"Wound me with tenderness",
+		"Tenderness is a touch , a thought, a feeling of bliss",
+		"I crave a night with tenderness not lust",
+		"That the tenderness of love has no parallel",
+		"Only and only the tenderness of stars is true",
+		"The Tenderness of your love, impresses me so much",
+		"And there is above everything else one single thing, tenderness",
+	],
+	"soreness":[
+		"A soreness behind the eyes",
+		"A faint yet familiar soreness in the back of the throat",
+		"Soreness in heart sends me to dream",
+		"Healing the soreness",
+		"Soreness still strikes their hearts!",
+		"The ebbing soreness of our confused migraine",
+		"It´s a soreness I would never lose",
+	],
+	"pain":[
+		"Pain is being able to imagine a future with him",
+		"Pain could be an angel, Pain could be a python",
+		"I know I have to get up whatever the pain",
+		"I care and its the one thing that causes me the most pain",
+		"I have an intimate relationship with pain",
+		"Because I know the feeling of pain of betrayal",
+		"Pain tells you when you've been wounded badly",
+		"I wrote even better poetry when I was in pain",
+		"Pain rains down on me like a hailstorm"
+	],
+	"discomfort":[
+		"The deep unsettling discomfort",
+		"Discomfort in my bones shakes me to my core",
+		"When you can survive in discomfort",
+		"They had grown too comfortable with my discomfort to give it all up",
+		"Discomfort returns",
+		"It’s about to erupt, the volcano of discomfort",
+	],
+	"uncomfortableness":[
+		"Cold uncomfortableness",
+		"That mixture of pity and uncomfortableness",
+		"I have accepted my uncomfortableness",
+		"Uncomfortableness fills me",
+		"The poison of uncomfortableness forces away any happiness I may have felt",
+		"The fear and uncomfortableness, like a pink elephant in the room that no one seems to notice",
+	],
+	"irritation":[
+		"Irritation is building up inside of me",
+		"But those enormous irritations you take with a grain of sand",
+		"A sigh of irritation finds it way out of your mouth",
+		"Irritation burning from my heart",
+		"And irritation born privately",
+		"Or was what I thought as love just another irritation",
+		"She wanted to hide herself away from the world until she was cured and rid of the irritation",
+		"I don't want to have this irritation",
+	],
+	"annoyance":[
+		"Sometimes I think I'm just an annoyance to other people",
+		"Annoyance is such a hideous thing",
+		"An annoyance generator is my mind",
+		"Master or mistress of annoyance",
+		"I can see the annoyance in their tired eyes",
+	],
+	"vexation":[
+		"Letting his cold vexation take over",
+		"In time, virtue will vanquish vexation and vandals",
+		"Clenching in merciless vexation for unknown reasons",
+		"Pain adores vexation, it gives a strange state of bliss",
+		"A myriad world of vexation",
+		"Vexation provoked by fury",
+	],
+	"aggravation":[
+		"Lost, aggravation",
+		"Like gender equality is a minor aggravation",
+		"Aggravation, frustration, complaints- complications",
+		"The spiteful aggravation",
+		"Sick and tired of all the aggravation",
+		"I caused them a lot of aggravation and consternation",
+		"Taste flavors of aggravation, happiness, and sorrow",
+		"Covered with soft pats of aggravation",
+	],
+	"loved":[
+		"I have loved,let us see if that’s all",
+		"I want to be loved for my thorns",
+		"I just want to be loved for being me",
+		"I want to be loved unconditionally",
+		"A petal for everyone that loved me",
+		"I never was loved so deeply",
+		"Oh to be loved by you",
+		"In this time remember that you are loved",
+		"I want you to feel loved all the time",
+		"To be loved by you would be my wildest dream come true",
+		"You told me you loved me & I said it back",
+		"One gentle voice reminding me I am loved"
+	],
+	"adored":[
+		"If you are adored and accepted",
+		"I was the devil and i adored you as god",
+		"The smallest hours, forever adored",
+		"All I wanted was to be selfishly adored",
+		"We are all glorified and adored at a shitty point in life",
+		"How I wish you adored me in the same way I adore you",
+		"Waiting for the woman she adored to come back",
+		"Much adored is the dead poet",
+		"It is a lighter burden to be adored than loved",
+		"You said you adored the feel of my arms around you",
+		"Our friendship was adored by the people we passed by",
+		"Because I adored you, all of you",
+		"When they are the ones who deserve to be adored",
+		"Through eyes that adored you everyday",
+		"For that special someone I once adored",
+
+	],
+	"idolized":[
+		"Love is sometimes idolized",
+		"God is the only one who should be idolized",
+		"Upon idolized lips I gander",
+		"It is better to be idolized than to idolize",
+		"I idolized you, losing my value",
+		"I want to be idolized and unconnected with everything",
+		"Idolized everything they're not",
+		"The one I had idolized and craved",
+		"What was it like to be idolized",
+		"I would live and idolized and immortalized",
+		"Yet I have idolized our time",
+		"A woman who is being idolized by everyone",
+	],
+	"admired":[
+		"A hollow wisp of someone I once admired",
+		"You admired me and wanted to hold my hand",
+		"I admired his perfection",
+		"I admired things no one understood",
+		"So why not seek the lord, in who's eyes we are greatly admired",
+		"How I admired him",
+		"Just to be admired by someone like you",
+		"Is it so selfish to want to be admired?",
+		"Leaving presents to be admired",
+		"I've always loved you, admired your free spirit",
+		"Fregrant & beautful, meant to be admired",
+	],
+	"appreciated":[
+		"A beauty not appreciated",
+		"When its winter the cold is not appreciated",
+		"The moon, appreciated so, shined its best",
+		"It's special only for the one that appreciated every sweet moments in life",
+		"I've never felt more understood or appreciated",
+		"My brightness is appreciated like a full moon at 12 midnight",
+		"There's no one who ever appreciated my warm hearted and lovely care",
+		"She's never wanted anything more than to be appreciated",
+		"I only felt appreciated when you were near",
+		"I never tell you how much you're appreciated",
+		"But peace appreciated",
+		"You want to be appreciated then stop hiding and come out of the dark"
+	],
+	"worshipped":[
+		"People in the Bible worshipped idols time and time again",
+		"Worshipped on the mountain",
+		"You babe, neglected me while I worshipped you",
+		"She worshipped her past",
+		"But respected if not worshipped",
+		"I'm never giving up the stars on your pure worshipped sky",
+		"Worshipped the goddess of golden hate",
+		"Because every time I try to stand out to be worshipped",
+		"Holy and worshipped around",
+		"I worshipped his sapphire portals",
+		"For me, she is the deity to be worshipped"
+	],
+	"revered":[
+		"There was a sadness I revered, but never possessed",
+		"All life is so revered",
+		"I revered the past until I understood",
+		"Her unsung glory is truly revered",
+		"You are my revered memory",
+		"Words revered in moonlight",
+		"They were treated and revered almost like living gods",
+		"Never allowing for a single, revered pause - for life",
+		"Some will be revered for what they were",
+		""
+	]
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

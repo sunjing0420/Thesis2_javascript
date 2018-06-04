@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Words Say</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Questrial" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="styles/styleclear.css">
+
+ 
+    
+
+</head>
+<body>
+
+
+<canvas id="canvas">
+
+       <!-- <script src="drawline.js"></script> -->
+
+</canvas>
+    <!-- This is the cover page -->
+   
+    <!-- Bingo sheet is displayed in this section -->
+<!--     <section id="bingoGame"> -->
+        <div class="wrapper">
+            
+            <!-- This is the users bingo sheet -->
+            <ul class="wordSheet">
+                <!-- i=0 -->
+                <input type="checkbox" id="word1" name="word1">
+                <li>
+                    
+                    <label for="word1" class="word1"></label>
+                </li>
+
+
+                <!-- i=1 -->
+                <input type="checkbox" id="word2" name="word2">
+                <li>    
+                    <label for="word2" class="word2"></label>
+                </li>
+
+
+                <!-- i=2 -->
+                <input type="checkbox" id="word3" name="word3">
+                <li>
+                    <label for="word3" class="word3"></label>
+                </li>
+
+
+                <!-- i=3 -->
+                <input type="checkbox" id="word4" name="word4">
+                <li>
+                    <label for="word4" class="word4"></label>
+                </li>
+
+
+                <!-- i=4 -->
+                <input type="checkbox" id="word5" name="word5">
+                <li>
+                    <label for="word5" class="word5"></label>
+                </li>
+
+
+                <!-- i=5 -->
+                <input type="checkbox" id="word6" name="word6">
+                <li>
+                    <label for="word6" class="word6"></label>
+
+                </li>
+
+
+                <!-- i=6 -->
+                <input type="checkbox" id="word7" name="word7">
+                <li>
+                    <label for="word7" class="word7"></label>
+
+                </li>
+
+
+                <!-- i=7 -->
+                <input type="checkbox" id="word8" name="word8">
+                <li>
+                    <label for="word8" class="word8"></label>
+
+                </li>
+
+
+                <!-- i=8 -->
+                <input type="checkbox" id="word9" name="word9">
+                <li>
+                    <label for="word9" class="word9" ></label>
+                </li>
+
+              
+                <!-- i=9 -->
+                <input type="checkbox" id="word10" name="word10">
+                <li>
+                    <label for="word10" class="word10" ></label>
+                </li>
+
+             
+                <!-- i=10 -->
+                <input type="checkbox" id="word11" name="word11">
+                <li>
+                    <label for="word11" class="word11" ></label>
+                </li>
+
+              
+                <!-- i=11 -->
+                <input type="checkbox" id="word12" name="word12">
+                <li>
+                    <label for="word12" class="word12" ></label>
+                </li>
+
+             
+                <!-- i=12 -->
+                <input type="checkbox" id="word13" name="word13">
+                <li>
+                    <label for="word13" class="word13" ></label>
+                </li>
+
+               
+                <!-- i=13 -->
+                <input type="checkbox" id="word14" name="word14">
+                <li>
+                    <label for="word14" class="word14" ></label>
+                </li>
+
+             
+                <!-- i=14 -->
+                <input type="checkbox" id="word15" name="word15">
+                <li>
+                    <label for="word15" class="word15" ></label>
+                </li>
+
+              
+                <!-- i=15 -->
+                <input type="checkbox" id="word16" name="word16">
+                <li>
+                    <label for="word16" class="word16" ></label>
+                </li>
+
+              
+                <!-- i=16 -->
+                <input type="checkbox" id="word17" name="word17">
+                <li>
+                    <label for="word17" class="word17" ></label>
+                </li>
+
+               
+                <!-- i=17 -->
+                <input type="checkbox" id="word18" name="word18">
+                <li>
+                    <label for="word18" class="word18" ></label>
+                </li>
+
+                
+                <!-- i=18 -->
+                <input type="checkbox" id="word19" name="word19">
+                <li>
+                    <label for="word19" class="word19" ></label>
+                </li>
+
+                
+                <!-- i=19 -->
+                <input type="checkbox" id="word20" name="word20">
+                <li>
+                    <label for="word20" class="word20" ></label>
+                </li>
+
+                
+                <!-- i=20 -->
+                <input type="checkbox" id="word21" name="word21">
+                <li>
+                    <label for="word21" class="word21" ></label>
+                </li>
+
+               
+                <!-- i=21 -->
+                <input type="checkbox" id="word22" name="word22">
+                <li>
+                    <label for="word22" class="word22" ></label>
+                </li>
+
+             
+                <!-- i=22 -->
+                <input type="checkbox" id="word23" name="word23">
+                <li>
+                    <label for="word23" class="word23" ></label>
+                </li>
+
+               
+                <!-- i=23 -->
+                <input type="checkbox" id="word24" name="word24">
+                <li>
+                    <label for="word24" class="word24" ></label>
+                </li>
+
+                
+                <!-- i=24 -->
+                <input type="checkbox" id="word25" name="word25">
+                <li>
+                    <label for="word25" class="word25" ></label>
+                </li>
+
+
+                <!-- i=25 -->
+                <input type="checkbox" id="word26" name="word26">
+                <li>
+                    
+                    <label for="word26" class="word26"></label>
+                </li>
+
+
+                <!-- i=26 -->
+                <input type="checkbox" id="word27" name="word27">
+                <li>    
+                    <label for="word27" class="word27"></label>
+                </li>
+
+
+                <!-- i=27 -->
+                <input type="checkbox" id="word28" name="word28">
+                <li>
+                    <label for="word28" class="word28"></label>
+                </li>
+
+
+                <!-- i=28 -->
+                <input type="checkbox" id="word29" name="word29">
+                <li>
+                    <label for="word29" class="word29"></label>
+                </li>
+
+
+                <!-- i=29 -->
+                <input type="checkbox" id="word30" name="word30">
+                <li>
+                    <label for="word30" class="word30"></label>
+                   
+                </li>
+
+
+                <!-- i=30 -->
+                <input type="checkbox" id="word31" name="word31">
+                <li>
+                    <label for="word31" class="word31"></label>
+
+                </li>
+
+
+                <!-- i=31 -->
+                <input type="checkbox" id="word32" name="word32">
+                <li>
+                    <label for="word32" class="word32"></label>
+
+                </li>
+
+
+                <!-- i=32 -->
+                <input type="checkbox" id="word33" name="word33">
+                <li>
+                    <label for="word33" class="word33"></label>
+
+                </li>
+
+
+                <!-- i=33 -->
+                <input type="checkbox" id="word34" name="word34">
+                <li>
+                    <label for="word34" class="word34" ></label>
+                </li>
+
+                
+                <!-- i=34 -->
+                <input type="checkbox" id="word35" name="word35">
+                <li>
+                    <label for="word35" class="word35" ></label>
+                </li>
+
+                
+                <!-- i=35 -->
+                <input type="checkbox" id="word36" name="word36">
+                <li>
+                    <label for="word36" class="word36" ></label>
+                </li>
+
+                
+                <!-- i=36 -->
+                <input type="checkbox" id="word37" name="word37">
+                <li>
+                    <label for="word37" class="word37" ></label>
+                </li>
+
+                
+                <!-- i=37 -->
+                <input type="checkbox" id="word38" name="word38">
+                <li>
+                    <label for="word38" class="word38" ></label>
+                </li>
+
+                
+                <!-- i=38 -->
+                <input type="checkbox" id="word39" name="word39">
+                <li>
+                    <label for="word39" class="word39" ></label>
+                </li>
+
+                
+                <!-- i=39 -->
+                <input type="checkbox" id="word40" name="word40">
+                <li>
+                    <label for="word40" class="word40" ></label>
+                </li>
+
+                
+                <!-- i=40 -->
+                <input type="checkbox" id="word41" name="word41">
+                <li>
+                    <label for="word41" class="word41" ></label>
+                </li>
+
+                
+                <!-- i=41 -->
+                <input type="checkbox" id="word42" name="word42">
+                <li>
+                    <label for="word42" class="word42" ></label>
+                </li>
+
+                
+                <!-- i=42 -->
+                <input type="checkbox" id="word43" name="word43">
+                <li>
+                    <label for="word43" class="word43" ></label>
+                </li>
+
+                
+                <!-- i=43 -->
+                <input type="checkbox" id="word44" name="word44">
+                <li>
+                    <label for="word44" class="word44" ></label>
+                </li>
+
+               
+                <!-- i=44 -->
+                <input type="checkbox" id="word45" name="word45">
+                <li>
+                    <label for="word45" class="word45" ></label>
+                </li>
+
+                
+                <!-- i=45 -->
+                <input type="checkbox" id="word46" name="word46">
+                <li>
+                    <label for="word46" class="word46" ></label>
+                </li>
+
+                
+                <!-- i=46 -->
+                <input type="checkbox" id="word47" name="word47">
+                <li>
+                    <label for="word47" class="word47" ></label>
+                </li>
+
+                
+                <!-- i=47 -->
+                <input type="checkbox" id="word48" name="word48">
+                <li>
+                    <label for="word48" class="word48" ></label>
+                </li>
+
+                
+                <!-- i=48 -->
+                <input type="checkbox" id="word49" name="word49">
+                <li>
+                    <label for="word49" class="word49" ></label>
+                </li>
+
+                
+                <!-- i=49 -->
+                <input type="checkbox" id="word50" name="word50">
+                <li>
+                    <label for="word50" class="word50" ></label>
+                </li>
+
+
+                 <!-- i=50 -->
+                <input type="checkbox" id="word51" name="word51">
+                <li>
+                    
+                    <label for="word51" class="word51"></label>
+                </li>
+
+
+                <!-- i=51 -->
+                <input type="checkbox" id="word52" name="word52">
+                <li>    
+                    <label for="word52" class="word52"></label>
+                </li>
+
+
+                <!-- i=52 -->
+                <input type="checkbox" id="word53" name="word53">
+                <li>
+                    <label for="word53" class="word53"></label>
+                </li>
+
+
+                <!-- i=53 -->
+                <input type="checkbox" id="word54" name="word54">
+                <li>
+                    <label for="word54" class="word54"></label>
+                </li >
+
+
+                <!-- i=54 -->
+                <input type="checkbox" id="word55" name="word55">
+                <li>
+                    <label for="word55" class="word55"></label>
+                   
+                </li>
+
+
+                <!-- i=55 -->
+                <input type="checkbox" id="word56" name="word56">
+                <li>
+                    <label for="word56" class="word56"></label>
+
+                </li>
+
+
+                <!-- i=56 -->
+                <input type="checkbox" id="word57" name="word57">
+                <li>
+                    <label for="word57" class="word57"></label>
+
+                </li>
+
+
+                <!-- i=57 -->
+                <input type="checkbox" id="word58" name="word58">
+                <li>
+                    <label for="word58" class="word58"></label>
+
+                </li>
+
+
+                <!-- i=58 -->
+                <input type="checkbox" id="word59" name="word59">
+                <li>
+                    <label for="word59" class="word59" ></label>
+                </li>
+
+                
+                <!-- i=59 -->
+                <input type="checkbox" id="word60" name="word60">
+                <li>
+                    <label for="word60" class="word60" ></label>
+                </li>
+
+                
+                <!-- i=60 -->
+                <input type="checkbox" id="word61" name="word61">
+                <li>
+                    <label for="word61" class="word61" ></label>
+                </li>
+
+                
+                <!-- i=61 -->
+                <input type="checkbox" id="word62" name="word62">
+                <li>
+                    <label for="word62" class="word62" ></label>
+                </li>
+
+               
+                <!-- i=62 -->
+                <input type="checkbox" id="word63" name="word63">
+                <li>
+                    <label for="word63" class="word63" ></label>
+                </li>
+
+                
+                <!-- i=63 -->
+                <input type="checkbox" id="word64" name="word64">
+                <li>
+                    <label for="word64" class="word64" ></label>
+                </li>
+
+                
+                
+            </ul>
+           <!--  <button id="newSheet">
+                New Sheet
+            </button>
+            <button id="endGame">
+                End Game
+            </button> -->
+        </div>
+
+<div class="poemWrapper">
+<!-- <p id="p1">I love you</p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+ --></div>
+
+ <audio autoplay="autoplay" controls="controls" hidden="true">
+     <source src="Poetry.mp3" />     
+ </audio>
+
+
+<!-- <audio class="my_audio" controls preload="none">
+    <source id="sound1"  src="audio/1.mp3" type="audio/mp4">
+    
+</audio> -->
+
+<!--     </section> -->
+
+    <!-- Results/Exit page here -->
+   
+    <!-- jquery CDN-->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+    <!-- script -->
+   
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script> 
+  <!-- <script src="scriptclear2.js"></script> -->
+  <script src="scriptfinal.js"></script>
+
+  <!-- <script src="poem.json"></script> -->
+  <script src="serverfinal.js"></script>
+
+    
+</body>
+</html>

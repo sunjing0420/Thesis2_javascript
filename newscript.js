@@ -1,4 +1,6 @@
- //must   
+
+
+//must   
     
 var n = 19;
 var previousN;
@@ -178,28 +180,47 @@ var connection = new WebSocket('ws://127.0.0.1:1337');
         // JSON this should work without any problem but we should make sure that
         // the massage is not chunked or otherwise damaged.
         try {
-             var json = JSON.parse(message.data);
-             console.log(json);
+
+          var poem = message.data.split(',');
+          var num = Math.floor(Math.random() * Math.floor(poem.length));
+
+          var chosenPoem = poem[num];
+
+          console.log(chosenPoem);
+
+             //var json = JSON.parse(message);
+             //console.log(json);
+            // console.log("message.data:"+ message);
+             //console.log(json.text);
+             
+             // var wholePoem = json.text;
+             // var whole = json;
+             // var firstSentence = ;
+             
+             // console.log("a b c d".spilt(" "));
 
              connection.send(bonusBank[bonusBank.length-1]);
             // $('#poems').append("<p class='sentences'>"+newNouns[touchCount-2]+sentences[Math.floor(Math.random()*100)]+newNouns[touchCount-1]+"</p>");
             // $ ('.poemWrapper').text(json.examples[0]);
-            var num = Math.floor(Math.random() * Math.floor(json.examples.length));
+            var num = Math.floor(Math.random() * Math.floor(message.data.length));
             
             if(bonusBank.length>2){
-            $ ('.poemWrapper').append("<p class='sentences'>" + json.examples[num]+"</p>");
+            $ ('.poemWrapper').append("<p class='sentences'>" + chosenPoem+"</p>");
+            //$ ('.poemWrapper').append("<p class='sentences'>" + json.text.split('\n')[1]+"</p>");
 
-            responsiveVoice.speak(json.examples[num]);
+            responsiveVoice.speak(chosenPoem,"UK English Male",{pitch: -2});
+
+            
 
 
 
 
         }else{
-            $ ('.poemWrapper').append("<p class='sentences'>" + "I love you"+"</p>");
+            $ ('.poemWrapper').append("<p class='sentences'>" + "I remember"+"</p>");
         }
 
         } catch (e) {
-            console.log('This doesn\'t look like a valid JSON: ', message.data);
+            //console.log('This doesn\'t look like a valid JSON: ', message.data);
             return;
         }
 
@@ -370,7 +391,7 @@ addDots(pointPosXRate[n-1] * (canvas.width),pointPosYRate[n-1] * (canvas.width))
 if(dataNum+1 == n-8){
 reset();
             n=n-8;
-            bonusBank.push("cold");
+            bonusBank.push(antiwordBank[antiwordBank.length-1]);
 
           
           
@@ -434,7 +455,7 @@ let wordSheet = [] // List of randomly generated words displayed on bingo sheet
 let antiwordSheet = []
 const bonusBank =  // List of Bonus words
     [ 
-    'love'
+    'dear'
     ]
 
 
@@ -458,15 +479,21 @@ var deleteWords = function(){
 } 
 
 var reset = function(){
-	for(var i=0;i<25;i++){
-		$('.word'+i).text('');
+	for(var i=1;i<26;i++){
+		//$('.word'+i).text('');
+    $('.word'+i).css({opacity:0.2});
 	}
 }
 
 
 var setSheet = function () { //appending words from the array
 
-
+  $('.word'+(n-5)).css({opacity:1});
+  $('.word'+(n-1)).css({opacity:1});
+  $('.word'+(n+1)).css({opacity:1});
+  $('.word'+(n+5)).css({opacity:1});
+  $('.word'+n).css({opacity:1});
+  
 
 	$('.word'+(n-5)).text(wordBank[wordBank.length-4]);
 	$('.word'+(n-1)).text(wordBank[wordBank.length-3]);
@@ -479,6 +506,8 @@ var setSheet = function () { //appending words from the array
 }
 
 let antisetSheet = function(){
+
+  $('.word'+(n-8)).css({opacity:1});
 
 	$('.word'+(n-8)).text(antiwordBank[antiwordBank.length-1]);
 }
@@ -506,7 +535,9 @@ let antisetSheet = function(){
                 // key: apiKey,
                 // rel_trg: "yoga",
                 // rel_syn: "love",
-                rel_syn: bonusBank[bonusBank.length-1],
+                //rel_trg: bonusBank[bonusBank.length-1],
+                //rel_syn: bonusBank[bonusBank.length-1],
+                ml: bonusBank[bonusBank.length-1],
                 max: 4
             },
             proxyHeaders: {
@@ -820,20 +851,20 @@ sendMessage();
 
 
 
-    $('#word1').on('click', function () {
-        if ($('#word1').prop("checked") == true) {
-            var newInput = $(`<p id="display1">${wordSheet[0]}<p>`)
-            $('#wordList').append(newInput);
-        } else if ($('#word1').prop("checked") == false) {
-            $('#wordList').find('#display1').remove();
-        }
-        // responsive grid
-        if ($('#word1').prop("checked") == true) {
-            $('li.1').addClass('crossed')
-        }else if ($('#word1').prop("checked") == false) {
-            $('li.1').removeClass('crossed')
-        }
-    })
+    // $('#word1').on('click', function () {
+    //     if ($('#word1').prop("checked") == true) {
+    //         var newInput = $(`<p id="display1">${wordSheet[0]}<p>`)
+    //         $('#wordList').append(newInput);
+    //     } else if ($('#word1').prop("checked") == false) {
+    //         $('#wordList').find('#display1').remove();
+    //     }
+    //     // responsive grid
+    //     if ($('#word1').prop("checked") == true) {
+    //         $('li.1').addClass('crossed')
+    //     }else if ($('#word1').prop("checked") == false) {
+    //         $('li.1').removeClass('crossed')
+    //     }
+    // })
 
     
     
@@ -1003,9 +1034,6 @@ events();
 //     p2 = n-1;
 //     draw();
 // }
-
-
-
 
 
 

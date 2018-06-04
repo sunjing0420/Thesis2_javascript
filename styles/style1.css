@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'SplendidB';
+  src: url('assets/fonts/SplendidB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'SplendidB', serif;
+  font-size: 20px;
+  text-align: center;
+   background: black;
+   color: white;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+}
+
+#block{
+	font-family: 'SplendidB', serif;
+	
+}

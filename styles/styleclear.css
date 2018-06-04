@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'SplendidB';
+  src: url('assets/fonts/SplendidB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {
+  font-family: 'SplendidB', serif;
+  font-size: 20px;
+  text-align: center;
+   background: black;
+   color: white;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+.wrapper {
+  width: 60%;
+  height: 100vh;
+  /*margin: 0 auto;*/
+  text-align: center;
+  /*position: absolute; */
+  display: inline-block;
+ 
+
+}
+
+
+input {
+  display: none; }
+
+input:checked + li {
+  color: white;
+  /*background: white; */
+}
+
+.crossed {
+  color: white;
+  /*background: white; */
+}
+
+
+
+ul.wordSheet {
+  font-family: 'SplendidB', serif;
+  
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*margin: 10px auto;*/
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
+
+}
+
+
+#canvas{
+  width: 60%;
+  /*height: 100vh;*/
+  position: absolute;
+  z-index: -1;
+  display: inline-block;
+  /*background-color: black;*/
+}
+
+.poemWrapper{
+
+  /*margin-top: 500px;*/
+height: 100vh;
+  font-family: 'SplendidB', serif;
+  width: 35%;
+  /*height: 100%;*/
+  border-top: 500px;
+  position: absolute;
+  display: inline-block;
+}
+
+#sentences{
+  position: fixed;
+}
+
+ul.wordSheet li {
+
+  /*BBBBORDER*/
+  /*border: 2px solid white;*/
+
+  
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  position: relative;
+  /*position: fixed;*/
+  text-align: center; }
+
+ul.wordSheet li label {
+  font-size: 16px; }
+  .wordSheet li label {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
